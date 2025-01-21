@@ -7,11 +7,11 @@ export default function Footer() {
       <div className="pt-[150px]">
         {/* Social Media Section */}
         <div className="flex gap-6 h-[20px] w-full pt-[20px]">
-        <p className="text-center sm:text-left sm:pl-3 pt-4 sm:pt-12 font-thin text-[#5e249d] text-sm sm:text-base md:text-lg">
-  Visit Our Social Platforms
-</p>
+          <p className="text-center sm:text-left sm:pl-3 pt-4 sm:pt-12 font-thin text-[#5e249d] text-sm sm:text-base md:text-lg">
+            Visit Our Social Platforms
+          </p>
 
-          <div className="flex pt-[78] ml-[-200] text-[#5e249d] text-sm gap-4"> 
+          <div className="flex pt-[78] ml-[-200] text-[#5e249d] text-sm gap-4">
             <a href="https://www.linkedin.com/school/ssuetofficial" target="_blank" rel="noopener noreferrer">
               <FaLinkedinIn size={20} />
             </a>
@@ -47,5 +47,3 @@ export default function Footer() {
     </div>
   );
 }
-
-
