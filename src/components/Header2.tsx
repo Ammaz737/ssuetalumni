@@ -9,7 +9,7 @@ export default function Header2() {
         {/* Logo Section */}
         <div className="flex-shrink-0">
           <img
-            src="logo.png"
+            src="/logo.png"
             alt="Logo"
             className="w-36 sm:w-48 md:w-64 h-auto"
           />
@@ -17,30 +17,28 @@ export default function Header2() {
 
         {/* Navigation Section */}
         <nav className="flex-grow">
-          <ul className="flex justify-end items-center gap-4 sm:gap-6 ml-2 text-[#521e89] text-sm sm:text-base flex-nowrap">
+          <ul className="flex justify-end items-center gap-4 sm:gap-6 ml-2 text-[#521e89] text-sm sm:text-base">
             {/* QUAD NEWS with Dropdown */}
+            {/* Uncomment if needed */}
             {/* <li className="relative group">
               <button className="flex items-center hover:underline whitespace-nowrap">
                 QUAD NEWS <FaChevronDown className="ml-2 text-xs sm:text-sm" />
               </button>
               <ul className="absolute hidden group-hover:block bg-[#a460ee] text-white mt-2 rounded shadow-lg w-40 z-10">
-                <li className="p-2 hover:bg-[#8041c4] cursor-pointer">News</li>
-                <li className="p-2 hover:bg-[#8041c4] cursor-pointer">
-                  Interviews
-                </li>
-                <li className="p-2 hover:bg-[#8041c4] cursor-pointer">
-                  Features
-                </li>
-                <li className="p-2 hover:bg-[#8041c4] cursor-pointer">
-                  Opinion
-                </li>
-                <li className="p-2 hover:bg-[#8041c4] cursor-pointer">
-                  QUADcast
-                </li>
+                {["News", "Interviews", "Features", "Opinion", "QUADcast"].map(
+                  (item) => (
+                    <li
+                      key={item}
+                      className="p-2 hover:bg-[#8041c4] cursor-pointer"
+                    >
+                      {item}
+                    </li>
+                  )
+                )}
               </ul>
             </li> */}
 
-            {/* Other Navigation Items */}
+            {/* Navigation Items */}
             <li>
               <Link
                 href="/ssuet"
@@ -67,27 +65,27 @@ export default function Header2() {
             </li>
 
             {/* ENGAGE with Dropdown */}
+            {/* Uncomment if needed */}
             {/* <li className="relative group">
               <button className="flex items-center hover:underline whitespace-nowrap">
                 ENGAGE <FaChevronDown className="ml-2 text-xs sm:text-sm" />
               </button>
               <ul className="absolute hidden group-hover:block bg-[#a460ee] text-white mt-2 rounded shadow-lg w-64 z-10">
-                <li className="p-2 hover:bg-[#8041c4] cursor-pointer">
-                  Alumni Board
-                </li>
-                <li className="p-2 hover:bg-[#8041c4] cursor-pointer">
-                  Book Club
-                </li>
-                <li className="p-2 hover:bg-[#8041c4] cursor-pointer">
-                  Distinguished Friend of Oxford
-                </li>
-                <li className="p-2 hover:bg-[#8041c4] cursor-pointer">
-                  Offer an Internship
-                </li>
-                <li className="p-2 hover:bg-[#8041c4] cursor-pointer">
-                  Crankstart Careers Mentoring Programme
-                </li>
-                <li className="p-2 hover:bg-[#8041c4] cursor-pointer">Donate</li>
+                {[
+                  "Alumni Board",
+                  "Book Club",
+                  "Distinguished Friend of Oxford",
+                  "Offer an Internship",
+                  "Crankstart Careers Mentoring Programme",
+                  "Donate",
+                ].map((item) => (
+                  <li
+                    key={item}
+                    className="p-2 hover:bg-[#8041c4] cursor-pointer"
+                  >
+                    {item}
+                  </li>
+                ))}
               </ul>
             </li> */}
           </ul>

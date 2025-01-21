@@ -16,8 +16,8 @@ export default function SSUET() {
       <Header2 />
 
       {/* About Section */}
-      <div className="bg-white flex flex-col md:flex-row items-center md:items-start">
-        <div className="p-6 pl-[100px] flex-1">
+      <div className="bg-white flex flex-col md:flex-row items-center md:items-start p-6">
+        <div className="flex-1 pl-12">
           <h2 className="font-bold text-4xl text-purple-800 mt-2">About the</h2>
           <h2 className="text-purple-600 text-4xl mt-3">
             Sir Syed University of Engineering <br /> and Technology
@@ -46,8 +46,8 @@ export default function SSUET() {
       </div>
 
       {/* Icons Section */}
-      <div className="flex justify-evenly pt-4 bg-purple-800 items-center">
-        {[
+      <div className="flex justify-evenly pt-6 bg-purple-800 items-center">
+        {[ 
           { icon: <BiSolidBank size={90} />, text: "About Us" },
           { icon: <FaEye size={90} />, text: "Vision" },
           { icon: <BsFillRecordCircleFill size={90} />, text: "Mission" },
@@ -56,10 +56,10 @@ export default function SSUET() {
         ].map((item, index) => (
           <div
             key={index}
-            className="relative flex flex-col items-center p-4 w-[200px] bg-purple-800 hover:bg-green-500 cursor-pointer transition-all"
+            className="relative flex flex-col items-center p-6 w-[200px] bg-purple-800 hover:bg-green-500 cursor-pointer transition-all"
           >
             {item.icon}
-            <span>{item.text}</span>
+            <span className="text-white mt-2">{item.text}</span>
           </div>
         ))}
       </div>
@@ -70,13 +70,11 @@ export default function SSUET() {
           <FaEye size={90} className="text-purple-800" />
         </div>
         <div className="flex flex-col">
-          <h1 className="text-purple-800 text-xl font-semibold">
-            Vision Statement of SSUET
-          </h1>
+          <h1 className="text-purple-800 text-xl font-semibold">Vision Statement of SSUET</h1>
           <h3 className="text-black mt-2 max-w-[500px]">
             To make SSUET a leading innovation provider in education and research
             with a focus on realizing positive economic impact, entrepreneurial
-            mindset and a sense of social responsibility as envisioned by Sir Syed
+            mindset, and a sense of social responsibility as envisioned by Sir Syed
             Ahmed Khan.
           </h3>
         </div>
@@ -88,14 +86,12 @@ export default function SSUET() {
           <BsFillRecordCircleFill size={90} className="text-green-500" />
         </div>
         <div className="flex flex-col">
-          <h1 className="text-green-500 text-xl font-semibold">
-            Mission Statement of SSUET
-          </h1>
+          <h1 className="text-green-500 text-xl font-semibold">Mission Statement of SSUET</h1>
           <h3 className="text-black mt-2 max-w-[500px]">
             To provide an enabling environment to all stakeholders of SSUET in
             the pursuit of technological and socio-economic development, for the
             achievement of long-term societal benefits through innovation,
-            research, commercialization and sharing of knowledge imbued with the
+            research, commercialization, and sharing of knowledge imbued with the
             sense of social and moral responsibility aligned with the Aligarh
             spirit.
           </h3>
@@ -104,7 +100,11 @@ export default function SSUET() {
 
       {/* Inspiration Section */}
       <div className="bg-purple-200 sm:pb-3 flex sm:flex-col md:flex-col sm:flex-row lg:flex-row">
-        <img src="/sir.webp" alt="Sir Syed Ahmad Khan" className="md:w-[700px] p-6" />
+        <img
+          src="/sir.webp"
+          alt="Sir Syed Ahmad Khan"
+          className="md:w-[700px] p-6"
+        />
         <div className="flex flex-col pt-3 sm:pt-[30px] px-6 sm:px-12">
           <h1 className="font-extrabold text-4xl text-purple-800">Inspiration</h1>
           <h3 className="text-black mt-4">
@@ -121,7 +121,7 @@ export default function SSUET() {
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -mx-4 -mb-10 text-center">
-            {[
+            {[ 
               {
                 img: "/Jawed-Anwar-SSUET.webp",
                 title: "Chancellor - Mr. Jawaid Anwar",
